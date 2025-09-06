@@ -1,0 +1,89 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+  .feature-icon{
+  background-color: lightgray  !important;
+  color: black !important;
+  border-radius: 5px;
+  padding: 5px;
+ }
+
+
+
+ .testimonial-img{
+  height: 150px;
+  border-radius: 500px;
+ }
+
+
+ .container-test{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  padding: auto;
+ }
+
+.test-img{
+  height: 30px;
+
+}
+
+
+ @media (width >=800px) {
+  .f1 {
+    display: flex;
+  }
+
+  .f2 {
+    flex: 1;
+
+  }
+
+  .f3 {
+    flex: 1;
+  }
+}
+
+
+@media (width <800px) {
+  .f1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .f3 {
+    flex: 1;
+  }
+
+  .f2 {
+    flex: 1;
+
+  }
+
+
+}
